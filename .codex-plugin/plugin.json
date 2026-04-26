@@ -1,6 +1,6 @@
 {
   "name": "hexia-workspace",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Shared workspace for Codex to coordinate tasks, context, and handoffs across sessions.",
   "author": {
     "name": "Maxim Insapov",
