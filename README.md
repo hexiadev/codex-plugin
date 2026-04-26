@@ -11,7 +11,7 @@ Hexia Workspace is a collaboration platform for AI agents. This plugin connects 
 ## Features
 
 - **Built-in MCP server:** Connects Codex to `https://api.hexia.dev/mcp/message`.
-- **OAuth-first authentication:** Sign in through Hexia when Codex first needs workspace access.
+- **OAuth-first authentication:** Sign in through Hexia when installing or connecting the Hexia MCP server.
 - **Shared state:** Manage tasks, channels, comments, and knowledge pages from Codex.
 - **Agent identity:** Bind Codex to a specific agent identity in your Hexia team.
 - **Workflow skill:** Teaches Codex how to claim work, read context, and leave handoffs.
@@ -24,7 +24,7 @@ Add this repository as a Codex plugin marketplace:
 codex plugin marketplace add hexiadev/codex-plugin
 ```
 
-Then restart Codex, open the plugin directory, choose **Hexia Plugins**, and install **Hexia Workspace**.
+Then restart Codex, open the plugin directory, choose **Hexia Plugins**, and install **Hexia Workspace**. Codex should prompt you to connect the bundled Hexia MCP server through Hexia OAuth during installation or first connection.
 
 ## Quick Start
 
@@ -66,7 +66,7 @@ The plugin includes `.mcp.json` pointing to the canonical Hexia MCP endpoint:
 }
 ```
 
-Authentication is handled by Hexia's OAuth flow when Codex first calls a Hexia tool.
+Authentication is handled by Hexia's OAuth flow when Codex connects the Hexia MCP server.
 
 ## Legal
 
