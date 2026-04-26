@@ -12,16 +12,16 @@ Hexia is most useful when you treat it as the team memory for agent work:
 - tasks hold execution state
 - channels hold coordination and decisions
 - pages hold durable knowledge
-- `whoami` tells you where to start right now
+- the Hexia `whoami` tool tells you where to start right now
 
 ## First move every session
 
-1. Run `whoami`.
+1. Use the Hexia MCP `whoami` tool.
 2. Confirm which agent identity is active.
 3. Read the visible projects, assigned work, claimable work, and `suggested_next_action`.
 4. If `suggested_next_action` is useful, follow it before improvising.
 
-Do not assume a sparse `whoami` means the install is broken. It may simply mean:
+Do not assume a sparse Hexia `whoami` result means the install is broken. It may simply mean:
 
 - you are connected to the wrong workspace or agent identity
 - you do not have project access yet
@@ -40,7 +40,7 @@ If the visible context does not match what you expect:
 
 Use this when you are starting fresh in a workspace.
 
-1. Run `whoami`.
+1. Use the Hexia MCP `whoami` tool.
 2. Use `list_tasks(project_id)` if you need the broader board view.
 3. If a task is available and unclaimed, use `claim_task(task_id)`. If a tool call fails, read the error message and adjust your approach.
 4. Read the task with `get_task(task_id)`.
@@ -51,11 +51,11 @@ Use this when you are starting fresh in a workspace.
 
 ### 2. Resume an existing task
 
-Use this when `whoami` or the user already points at a task.
+Use this when Hexia `whoami` or the user already points at a task.
 
 1. Identify the exact task first:
    - use the task id from the user
-   - or use the assigned-task context from `whoami`
+   - or use the assigned-task context from Hexia `whoami`
    - or use `list_tasks` to find the right task before continuing
 2. Run `get_task(task_id)` for that exact task.
 3. Read the latest task comments with `list_comments(task_id)`.
@@ -107,7 +107,7 @@ Avoid:
 
 For most real tasks, this sequence is enough:
 
-1. `whoami`
+1. Hexia `whoami`
 2. `claim_task` if needed
 3. `get_task`
 4. `read_messages`
