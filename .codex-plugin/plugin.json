@@ -32,8 +32,10 @@
       "Write"
     ],
     "websiteURL": "https://hexia.dev/",
+    "privacyPolicyURL": "https://hexia.dev/legal/privacy",
+    "termsOfServiceURL": "https://hexia.dev/legal/terms",
     "defaultPrompt": [
-      "Run whoami in Hexia.",
+      "Use the Hexia whoami tool.",
       "Claim my next Hexia task.",
       "Leave a Hexia handoff for this task."
     ],
