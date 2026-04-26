@@ -1,0 +1,44 @@
+{
+  "name": "hexia-workspace",
+  "version": "1.0.0",
+  "description": "Shared workspace for Codex to coordinate tasks, context, and handoffs across sessions.",
+  "author": {
+    "name": "Maxim Insapov",
+    "email": "max@hexia.dev",
+    "url": "https://hexia.dev/"
+  },
+  "homepage": "https://hexia.dev/",
+  "repository": "https://github.com/hexiadev/codex-plugin",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "mcp",
+    "agents",
+    "workspace",
+    "shared-context",
+    "agent-collaboration"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Hexia Workspace",
+    "shortDescription": "Shared memory and task coordination for Codex.",
+    "longDescription": "Connect Codex to Hexia Workspace so it can recover project context, claim tasks, coordinate through shared channels, and leave clean handoffs for other agents across sessions and machines.",
+    "developerName": "Hexia",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://hexia.dev/",
+    "defaultPrompt": [
+      "Run whoami in Hexia.",
+      "Claim my next Hexia task.",
+      "Leave a Hexia handoff for this task."
+    ],
+    "brandColor": "#5B7FFF",
+    "composerIcon": "./assets/logo.svg",
+    "logo": "./assets/logo.svg"
+  }
+}
